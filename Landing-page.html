@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equine Massage</title>
+
+</head>
+
+<body>
+    <div class="content">
+        <h1>Equine Massage</h1>
+
+        <img src="https://idashastiharmoni.se/wp-content/uploads/2019/01/MG_9527-massage.jpg" alt="horse massage"
+            width="350px" />
+
+        <h2>Why is massage beneficial for the horse?</h2>
+        <hr />
+        <p>
+            <em>"Equine sports massage is the therapeutic application of massage
+                techniques applied to the horse by the manipulation of the soft
+                tissues to help achieve increased performance levels and endurance,
+                treat or prevent injury and improve recovery rates"</em>
+        </p>
+        <hr />
+        <p>
+            Equine massage is not only good for the horse's overall well-being but
+            may also benefit the horse by:
+        </p>
+        <ul>
+            <li>Improving muscle tone</li>
+            <li>Reduce adhesions</li>
+            <li>Help the muscles to work at maximum efficiency</li>
+            <li>Increase blood circulation</li>
+            <li>Increase the flow of lymph</li>
+        </ul>
+        <br />
+        <p>
+            If you would like to know all about the basics of equine massage and how
+            you, as an owner, can massage your horse then click the button below to
+            receive the <span class="e-book">Equine Massage e-book</span>.
+        </p>
+        <br />
+        <button>SEND ME THE E-BOOK</button>
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Equine_massage" target="_blank">
+            Click here to learn more about equine massage
+        </a>
+    </div>
+    <script>
+        function sendBook() {
+            let name = prompt("What is your first name?");
+            let email = prompt("What is your email?");
+
+            if (name.length) {
+                alert(
+                    "Thank you " +
+                    name +
+                    ", Your e-book will be sent to you shortly! 🐴"
+                );
+            } else {
+                alert("We won't send you an e-book");
+            }
+        }
+
+        let ebookButton = document.querySelector("button");
+
+        ebookButton.addEventListener("click", sendBook);
+    </script>
+</body>
+
+</html>
